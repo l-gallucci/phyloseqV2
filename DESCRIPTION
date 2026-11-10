@@ -25,6 +25,7 @@ Imports:
     Biostrings (>= 2.40.0),
     cluster (>= 2.0.4),
     data.table (>= 1.10.4),
+    digest (>= 0.6.25),
     foreach (>= 1.4.3),
     ggplot2 (>= 2.1.0),
     igraph (>= 1.0.1),
@@ -33,18 +34,28 @@ Imports:
     plyr (>= 1.8.3),
     reshape2 (>= 1.4.1),
     scales (>= 0.4.0),
-    vegan (>= 2.5)
+    vegan (>= 2.5),
+    XVector (>= 0.16)
 Depends:
     R (>= 3.3.0)
 Suggests:
     BiocStyle (>= 2.4),
+    compositions (>= 2.0),
     DESeq2 (>= 1.16.1),
+    DECIPHER (>= 2.0),
     genefilter (>= 1.58),
     knitr (>= 1.16),
     magrittr (>= 1.5),
     metagenomeSeq (>= 1.14),
+    microViz (>= 0.12.6),
+    pheatmap (>= 1.0.12),
+    phangorn (>= 2.12),
     rmarkdown (>= 1.6),
-    testthat (>= 1.0.2)
+    S4Vectors (>= 0.23.18),
+    SummarizedExperiment (>= 1.16),
+    testthat (>= 1.0.2),
+    tidyplots (>= 0.4.0),
+    TreeSummarizedExperiment (>= 2.14.0)
 VignetteBuilder: knitr
 Enhances: doParallel (>= 1.0.10)
 biocViews: ImmunoOncology, Sequencing, Microbiome, Metagenomics,
@@ -52,6 +63,7 @@ biocViews: ImmunoOncology, Sequencing, Microbiome, Metagenomics,
     GeneticVariability
 URL: http://dx.plos.org/10.1371/journal.pone.0061217
 BugReports: https://github.com/joey711/phyloseq/issues
+Additional_repositories: https://david-barnett.r-universe.dev
 Collate:
     'allClasses.R'
     'allPackage.R'
@@ -68,6 +80,14 @@ Collate:
     'merge-methods.R'
     'multtest-wrapper.R'
     'ordination-methods.R'
+    'transform-methods.R'
+    'composition-methods.R'
+    'asv-methods.R'
+    'silva-reference.R'
+    'asv-phylogeny.R'
+    'filter-prevalence.R'
+    'plot-composition.R'
+    'plot-integrations.R'
     'transform_filter-methods.R'
     'validity-methods.R'
     'assignment-methods.R'
